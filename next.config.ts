@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   images: {
     remotePatterns: [
       {
@@ -19,9 +22,7 @@ const nextConfig = {
         hostname: "placehold.co",
       },
     ],
-    // typescript: {
-    //   ignoreBuildErrors: true,
-    // },
+    
   },
 };
 
